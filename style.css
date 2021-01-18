@@ -1,0 +1,38 @@
+main {
+  margin: 0 auto;
+  width: 120px;
+}
+
+section {
+  text-align: center;
+  margin-top: 10px;
+}
+#battery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid violet;
+}
+
+#battery div {
+  height: 120px;
+  padding: 10px;
+}
+
+.energy-level-0 div {
+  /*bu class i ve buna bagli class lari CSS icinde olusturduk */
+  background: white;
+}
+
+.energy-level-1 div:last-child {
+  background: pink;
+}
+
+.energy-level-2 div:nth-child(2),
+.energy-level-2 div:last-child {
+  background: orangered;
+}
+
+.energy-level-3 div {
+  background: green;
+}
